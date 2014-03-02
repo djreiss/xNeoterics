@@ -1,0 +1,1143 @@
+Magic: 13000
+
+Internal Form Definition File
+    (do not change)
+
+Number of forms: 4
+Unit of measure: FL_COORD_PIXEL
+
+=============== FORM ===============
+Name: options
+Width: 470
+Height: 530
+Number of Objects: 29
+
+--------------------
+class: FL_BOX
+type: UP_BOX
+box: 0 0 470 530
+boxtype: FL_UP_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_TOP|FL_ALIGN_INSIDE
+style: FL_BOLD_STYLE
+size: FL_NORMAL_SIZE
+lcol: FL_BLACK
+label: Options
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: 
+callback: 
+argument: 
+
+--------------------
+class: FL_FRAME
+type: EMBOSSED_FRAME
+box: 20 370 210 130
+boxtype: FL_NO_BOX
+colors: FL_BLACK FL_COL1
+alignment: FL_ALIGN_CENTER
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: 
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: 
+callback: 
+argument: 
+
+--------------------
+class: FL_FRAME
+type: EMBOSSED_FRAME
+box: 240 370 220 110
+boxtype: FL_NO_BOX
+colors: FL_BLACK FL_COL1
+alignment: FL_ALIGN_CENTER
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: 
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: 
+callback: 
+argument: 
+
+--------------------
+class: FL_FRAME
+type: EMBOSSED_FRAME
+box: 20 190 440 170
+boxtype: FL_NO_BOX
+colors: FL_BLACK FL_COL1
+alignment: FL_ALIGN_CENTER
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: 
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: 
+callback: 
+argument: 
+
+--------------------
+class: FL_VALSLIDER
+type: HOR_BROWSER_SLIDER
+box: 35 250 200 20
+boxtype: FL_DOWN_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_TOP
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Probabiliy of Mutation:
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: prob_mutation
+callback: 
+argument: 
+	precision: 3
+	value: 0.008
+	increment: 0.001 0.001
+	slsize: 0.10
+	step: 0.001
+
+--------------------
+class: FL_VALSLIDER
+type: HOR_BROWSER_SLIDER
+box: 250 250 200 20
+boxtype: FL_DOWN_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_TOP
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Probabiliy of Crossover:
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: prob_crossover
+callback: 
+argument: 
+	precision: 3
+	value: 0.002
+	increment: 0.001 0.001
+	slsize: 0.10
+	step: 0.001
+
+--------------------
+class: FL_VALSLIDER
+type: HOR_BROWSER_SLIDER
+box: 250 210 200 20
+boxtype: FL_DOWN_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_TOP
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Maximum Population:
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: max_pop
+callback: 
+argument: 
+	bounds: 0 10000
+	precision: 0
+	value: 2000
+	increment: 10 10
+	slsize: 0.10
+	step: 1
+
+--------------------
+class: FL_CHECKBUTTON
+type: PUSH_BUTTON
+box: 260 380 20 20
+boxtype: FL_NO_BOX
+colors: FL_COL1 FL_YELLOW
+alignment: FL_ALIGN_CENTER
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Maintain a Minimum Population?
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: maintain_min_pop
+callback: 
+argument: 
+
+--------------------
+class: FL_VALSLIDER
+type: HOR_BROWSER_SLIDER
+box: 35 290 200 20
+boxtype: FL_DOWN_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_TOP
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Age Factor:
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: age_factor
+callback: 
+argument: 
+	bounds: 0 15
+	precision: 0
+	value: 9
+	increment: 1 1
+	slsize: 0.10
+	step: 1
+
+--------------------
+class: FL_VALSLIDER
+type: HOR_BROWSER_SLIDER
+box: 250 290 200 20
+boxtype: FL_DOWN_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_TOP
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Carcass Decay Rate:
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: carcass_decay_rate
+callback: 
+argument: 
+	bounds: 0 100000
+	precision: 0
+	value: 10000
+	increment: 100 100
+	slsize: 0.10
+	step: 100
+
+--------------------
+class: FL_CHECKBUTTON
+type: PUSH_BUTTON
+box: 45 380 20 20
+boxtype: FL_NO_BOX
+colors: FL_COL1 FL_YELLOW
+alignment: FL_ALIGN_CENTER
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Save Simulation Every N Steps?
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: save_sim
+callback: 
+argument: 
+
+--------------------
+class: FL_VALSLIDER
+type: HOR_BROWSER_SLIDER
+box: 40 420 170 20
+boxtype: FL_DOWN_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_TOP
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Save Every N Steps:
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: save_every
+callback: 
+argument: 
+	bounds: 0 100000
+	precision: 0
+	value: 50000
+	increment: 100 100
+	slsize: 0.12
+	step: 100
+
+--------------------
+class: FL_INPUT
+type: NORMAL_INPUT
+box: 40 465 170 20
+boxtype: FL_DOWN_BOX
+colors: FL_COL1 FL_MCOL
+alignment: FL_ALIGN_TOP
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Default File Name:
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: file_name
+callback: 
+argument: 
+
+--------------------
+class: FL_BUTTON
+type: RETURN_BUTTON
+box: 360 490 80 30
+boxtype: FL_UP_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_CENTER
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: OK
+shortcut: ^M
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: ok
+callback: 
+argument: 
+
+--------------------
+class: FL_FRAME
+type: ENGRAVED_FRAME
+box: 20 20 440 160
+boxtype: FL_NO_BOX
+colors: FL_BLACK FL_COL1
+alignment: FL_ALIGN_TOP
+style: FL_BOLD_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Initial Parameters
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: initial_params_frame
+callback: 
+argument: 
+
+--------------------
+class: FL_VALSLIDER
+type: HOR_BROWSER_SLIDER
+box: 35 210 200 20
+boxtype: FL_DOWN_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_TOP
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Display Scale Factor:
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: scale
+callback: 
+argument: 
+	bounds: 1 32
+	precision: 0
+	value: 5
+	increment: 1 1
+	slsize: 0.10
+	step: 1
+
+--------------------
+class: FL_VALSLIDER
+type: HOR_BROWSER_SLIDER
+box: 265 420 170 20
+boxtype: FL_DOWN_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_TOP
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Minimum Population:
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: min_pop
+callback: 
+argument: 
+	bounds: 0 100
+	precision: 0
+	value: 5
+	increment: 1 1
+	slsize: 0.12
+	step: 1
+
+--------------------
+class: FL_CHECKBUTTON
+type: PUSH_BUTTON
+box: 280 450 20 20
+boxtype: FL_NO_BOX
+colors: FL_COL1 FL_YELLOW
+alignment: FL_ALIGN_CENTER
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Use Survivor for Minimum?
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: use_survivor
+callback: 
+argument: 
+
+--------------------
+class: FL_BEGIN_GROUP
+type: 0
+box: 0 0 0 0
+boxtype: FL_NO_BOX
+colors: FL_COL1 FL_MCOL
+alignment: FL_ALIGN_CENTER
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: 
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: initial_parameters_group
+callback: 
+argument: 
+
+--------------------
+class: FL_CHOICE
+type: NORMAL_CHOICE2
+box: 340 135 100 30
+boxtype: FL_UP_BOX
+colors: FL_COL1 FL_BLACK
+alignment: FL_ALIGN_LEFT
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Terrain Size (cells):
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: terrain_size
+callback: 
+argument: 
+  content: 8
+  content: 16
+  content: 32
+  content: 64
+  content: 128
+  content: 256
+  content: 512
+  content: 1024
+  content: 2048
+  value: 4
+
+--------------------
+class: FL_VALSLIDER
+type: HOR_BROWSER_SLIDER
+box: 35 60 200 20
+boxtype: FL_DOWN_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_TOP
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Initial Population:
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: initial_pop
+callback: 
+argument: 
+	bounds: 0 2000
+	precision: 0
+	value: 200
+	increment: 10 10
+	slsize: 0.10
+	step: 1
+
+--------------------
+class: FL_VALSLIDER
+type: HOR_BROWSER_SLIDER
+box: 35 100 200 20
+boxtype: FL_DOWN_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_TOP
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Number of Initial Plant Locations:
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: initial_plant
+callback: 
+argument: 
+	bounds: 0 10000
+	precision: 0
+	value: 1000
+	increment: 100 100
+	slsize: 0.10
+	step: 100
+
+--------------------
+class: FL_VALSLIDER
+type: HOR_BROWSER_SLIDER
+box: 250 100 200 20
+boxtype: FL_DOWN_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_TOP
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Number of Initial Flesh Locations:
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: initial_flesh
+callback: 
+argument: 
+	bounds: 0 10000
+	precision: 0
+	value: 1000
+	increment: 100 100
+	slsize: 0.10
+	step: 100
+
+--------------------
+class: FL_CHECKBUTTON
+type: PUSH_BUTTON
+box: 290 55 20 20
+boxtype: FL_NO_BOX
+colors: FL_COL1 FL_YELLOW
+alignment: FL_ALIGN_CENTER
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Give A Head Start?
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: give_head_start
+callback: 
+argument: 
+	value: 1
+
+--------------------
+class: FL_CHECKBUTTON
+type: PUSH_BUTTON
+box: 70 150 20 20
+boxtype: FL_NO_BOX
+colors: FL_COL1 FL_YELLOW
+alignment: FL_ALIGN_CENTER
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Allow Asexual Reproduction?
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: allow_asex
+callback: 
+argument: 
+	value: 1
+
+--------------------
+class: FL_CHECKBUTTON
+type: PUSH_BUTTON
+box: 70 130 20 20
+boxtype: FL_NO_BOX
+colors: FL_COL1 FL_YELLOW
+alignment: FL_ALIGN_CENTER
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Allow Sexual Reproduction?
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: allow_sex
+callback: 
+argument: 
+	value: 1
+
+--------------------
+class: FL_END_GROUP
+type: 0
+box: 0 0 0 0
+boxtype: FL_NO_BOX
+colors: FL_COL1 FL_MCOL
+alignment: FL_ALIGN_CENTER
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: 
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: 
+callback: 
+argument: 
+
+--------------------
+class: FL_VALSLIDER
+type: HOR_BROWSER_SLIDER
+box: 35 330 200 20
+boxtype: FL_DOWN_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_TOP
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Waste Decay Rate:
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: waste_decay_rate
+callback: 
+argument: 
+	bounds: 0 10000
+	precision: 0
+	value: 20
+	increment: 10 10
+	slsize: 0.10
+	step: 5
+
+--------------------
+class: FL_VALSLIDER
+type: HOR_BROWSER_SLIDER
+box: 250 330 200 20
+boxtype: FL_DOWN_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_TOP
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Poison Decay Rate:
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: poison_decay_rate
+callback: 
+argument: 
+	bounds: 0 10000
+	precision: 0
+	value: 20
+	increment: 10 10
+	slsize: 0.10
+	step: 5
+
+=============== FORM ===============
+Name: mainWindow
+Width: 550
+Height: 490
+Number of Objects: 10
+
+--------------------
+class: FL_BOX
+type: UP_BOX
+box: 0 0 550 490
+boxtype: FL_UP_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_CENTER
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: 
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: 
+callback: 
+argument: 
+
+--------------------
+class: FL_CANVAS
+type: NORMAL_CANVAS
+box: 10 40 510 420
+boxtype: FL_UP_BOX
+colors: FL_BLACK FL_WHITE
+alignment: FL_ALIGN_CENTER
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: 
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NorthWest FL_SouthEast
+name: mainCanvas
+callback: 
+argument: 
+
+--------------------
+class: FL_SCROLLBAR
+type: HOR_THIN_SCROLLBAR
+box: 10 465 510 20
+boxtype: FL_DOWN_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_BOTTOM
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: 
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_SouthWest FL_SouthEast
+name: scroll_h
+callback: 
+argument: 
+	step: 0.100
+	increment: 0.1 0.1
+
+--------------------
+class: FL_SCROLLBAR
+type: VERT_THIN_SCROLLBAR
+box: 525 40 20 420
+boxtype: FL_DOWN_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_BOTTOM
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: 
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NorthEast FL_SouthEast
+name: scroll_v
+callback: 
+argument: 
+	step: 0.100
+	increment: 0.1 0.1
+
+--------------------
+class: FL_BUTTON
+type: NORMAL_BUTTON
+box: 410 5 80 30
+boxtype: FL_UP_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_CENTER
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Pause
+shortcut: Pp
+resize: FL_RESIZE_ALL
+gravity: FL_SouthEast FL_SouthEast
+name: pause
+callback: 
+argument: 
+
+--------------------
+class: FL_BUTTON
+type: NORMAL_BUTTON
+box: 320 5 80 30
+boxtype: FL_UP_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_CENTER
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Step (spc)
+shortcut:  
+resize: FL_RESIZE_ALL
+gravity: FL_SouthEast FL_SouthEast
+name: step
+callback: 
+argument: 
+
+--------------------
+class: FL_BUTTON
+type: NORMAL_BUTTON
+box: 140 5 80 30
+boxtype: FL_UP_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_CENTER
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: More Food (+)
+shortcut: +
+resize: FL_RESIZE_ALL
+gravity: FL_SouthEast FL_SouthEast
+name: add_food
+callback: 
+argument: 
+
+--------------------
+class: FL_BUTTON
+type: NORMAL_BUTTON
+box: 230 5 80 30
+boxtype: FL_UP_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_CENTER
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Less Food (-)
+shortcut: -
+resize: FL_RESIZE_ALL
+gravity: FL_SouthEast FL_SouthEast
+name: remove_food
+callback: 
+argument: 
+
+--------------------
+class: FL_MENU
+type: PULLDOWN_MENU
+box: 10 10 50 20
+boxtype: FL_FLAT_BOX
+colors: FL_COL1 FL_MCOL
+alignment: FL_ALIGN_LEFT
+style: FL_BOLD_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: File
+shortcut: Ff
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: file_menu
+callback: 
+argument: 
+  content: New
+  shortcut: Nn
+  content: Close
+  shortcut: Ww
+  content: Load
+  shortcut: Ll
+  content: Save
+  shortcut: Ss
+  content: Print...
+  shortcut: Pp
+  content: Quit
+  shortcut: Qq
+
+--------------------
+class: FL_MENU
+type: PULLDOWN_MENU
+box: 60 10 60 20
+boxtype: FL_FLAT_BOX
+colors: FL_COL1 FL_MCOL
+alignment: FL_ALIGN_LEFT
+style: FL_BOLD_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Other
+shortcut: Oo
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: other_menu
+callback: 
+argument: 
+  content: Load Bug
+  shortcut: Ll
+  content: Save Bug
+  shortcut: Ss
+  content: Leave Trails
+  shortcut: Tt
+  content: Update Display
+  shortcut: Dd
+  content: NNet Window
+  shortcut: Nn
+  content: Chart Window
+  shortcut: Cc
+  content: Options...
+  shortcut: Oo
+
+=============== FORM ===============
+Name: neural_net_plot
+Width: 480
+Height: 370
+Number of Objects: 3
+
+--------------------
+class: FL_BOX
+type: UP_BOX
+box: 0 0 480 370
+boxtype: FL_UP_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_TOP|FL_ALIGN_INSIDE
+style: FL_BOLD_STYLE
+size: FL_NORMAL_SIZE
+lcol: FL_BLACK
+label: Neural Net Plot
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: mainWindow
+callback: 
+argument: 
+
+--------------------
+class: FL_CANVAS
+type: NORMAL_CANVAS
+box: 15 20 450 300
+boxtype: FL_DOWN_BOX
+colors: FL_NoColor FL_BLACK
+alignment: FL_ALIGN_CENTER
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: 
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: mainCanvas
+callback: 
+argument: 
+
+--------------------
+class: FL_BUTTON
+type: RETURN_BUTTON
+box: 370 330 90 30
+boxtype: FL_UP_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_CENTER
+style: FL_BOLD_STYLE
+size: FL_NORMAL_SIZE
+lcol: FL_BLACK
+label: OK
+shortcut: ^M
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: ok
+callback: 
+argument: 
+
+=============== FORM ===============
+Name: chart_window
+Width: 570
+Height: 480
+Number of Objects: 13
+
+--------------------
+class: FL_BOX
+type: UP_BOX
+box: 0 0 570 480
+boxtype: FL_UP_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_TOP|FL_ALIGN_INSIDE
+style: FL_BOLD_STYLE
+size: FL_MEDIUM_SIZE
+lcol: FL_BLACK
+label: Population Statistics
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: 
+callback: 
+argument: 
+
+--------------------
+class: FL_CHART
+type: BAR_CHART
+box: 10 40 140 120
+boxtype: FL_SHADOW_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_TOP
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Bug Maximum Masses
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: max_mass
+callback: 
+argument: 
+
+--------------------
+class: FL_CHART
+type: BAR_CHART
+box: 150 40 140 120
+boxtype: FL_SHADOW_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_TOP
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Bug Plant Efficiency
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: plant_eff
+callback: 
+argument: 
+
+--------------------
+class: FL_CHART
+type: BAR_CHART
+box: 290 40 140 120
+boxtype: FL_SHADOW_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_TOP
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Bug Attack Capability
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: attack
+callback: 
+argument: 
+
+--------------------
+class: FL_CHART
+type: BAR_CHART
+box: 430 40 130 120
+boxtype: FL_SHADOW_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_TOP
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Bug Color 1
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: color1
+callback: 
+argument: 
+
+--------------------
+class: FL_CHART
+type: BAR_CHART
+box: 10 180 140 130
+boxtype: FL_SHADOW_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_TOP
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Bug Color 2
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: color2
+callback: 
+argument: 
+
+--------------------
+class: FL_CHART
+type: BAR_CHART
+box: 150 180 140 130
+boxtype: FL_SHADOW_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_TOP
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Bug Minimum Breeding Age
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: breeding_age
+callback: 
+argument: 
+
+--------------------
+class: FL_CHART
+type: BAR_CHART
+box: 290 180 140 130
+boxtype: FL_SHADOW_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_TOP
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Bug Minimum Breeding Energy
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: breeding_energy
+callback: 
+argument: 
+
+--------------------
+class: FL_CHART
+type: LINE_CHART
+box: 430 180 130 130
+boxtype: FL_SHADOW_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_TOP
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Global Population
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: population
+callback: 
+argument: 
+
+--------------------
+class: FL_CHART
+type: BAR_CHART
+box: 10 330 140 130
+boxtype: FL_SHADOW_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_TOP
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Bug Energy
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: energy
+callback: 
+argument: 
+
+--------------------
+class: FL_CHART
+type: BAR_CHART
+box: 150 330 140 130
+boxtype: FL_SHADOW_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_TOP
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Bug Mass
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: mass
+callback: 
+argument: 
+
+--------------------
+class: FL_BUTTON
+type: RETURN_BUTTON
+box: 460 370 80 30
+boxtype: FL_UP_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_CENTER
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: OK
+shortcut: ^M
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: ok
+callback: 
+argument: 
+
+--------------------
+class: FL_CHART
+type: BAR_CHART
+box: 290 330 140 130
+boxtype: FL_SHADOW_BOX
+colors: FL_COL1 FL_COL1
+alignment: FL_ALIGN_TOP
+style: FL_NORMAL_STYLE
+size: FL_DEFAULT_SIZE
+lcol: FL_BLACK
+label: Bug Metabolism
+shortcut: 
+resize: FL_RESIZE_ALL
+gravity: FL_NoGravity FL_NoGravity
+name: metabolism
+callback: 
+argument: 
+
+==============================
+create_the_forms
